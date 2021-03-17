@@ -1,7 +1,7 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app can be used to write and save notes using Express.js.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.17.1",
+    "generate-unique-id": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachelamos/note-taker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/rachelamos/note-taker/issues"
+  },
+  "homepage": "https://github.com/rachelamos/note-taker#readme"
 }
