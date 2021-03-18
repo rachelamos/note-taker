@@ -7,7 +7,7 @@ module.exports = (app) => {
         tableData.push(req.body);
         res.json(true);
         const id = generateUniqueId({
-            length: 11,
+            length: 4,
             useLetters: false
         })
     });
