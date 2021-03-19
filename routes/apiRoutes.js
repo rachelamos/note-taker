@@ -1,20 +1,20 @@
-const dbData = require('/../db/db.json');
+// const dbData = require('/../db/db.json');
 const generateUniqueId = require('generate-unique-id');
 const router = require('express').Router();
 const fs = require('fs');
 
 router.get("/notes", (req, res) => {
-    console.log(newNote);
+    // console.log(newNote);
     fs.readFile(`${__dirname}/../db/db.json`, (err, data) => {
         if (err) throw err;
-        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end(data);
     })
 });
 
 // fs writeFile to read contents of my dbData (add above)
 router.post("/notes", (req, res) => {
-    const newNote = JSON.stringify(req.body);
+    const newNote = req.body;
         // "title": req.body.title,
         // "text": req.body.text,
     newNote.id = generateUniqueId(),
